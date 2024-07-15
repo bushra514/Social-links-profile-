@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+/* colors */
+
+--clr-green: hsl(75, 94%, 57%);
+--clr-white :  hsl(0, 0%, 100%);
+--clr-grey: hsl(0, 0%, 20%);
+--clr-dark-grey: hsl(0, 0%, 12%);
+--clr-Off-black : hsl(0, 0%, 8%);
+
+/* fonts */
+--fnt-400 : 400;
+--fnt-600 : 600;
+--fnt-700 : 700;
+
+
+--fnt-family : "Inter";
+}
+
+
+body{
+    background-color: var(--clr-Off-black);
+    font-family: var(--fnt-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white);
+    min-height: 100svh;
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+main{
+    background-color: var(--clr-dark-grey);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.img__logo{
+    width: 40%;
+    border-radius: 90px;
+}
+
+.name{
+    font-weight: var(--fnt-400);
+    font-size: 1.7rem;
+}
+
+.location{
+    color: var(--clr-green);
+}
+
+.description{
+    color: var(--clr-white);
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+
+.social_links{
+    display: grid;
+    gap: .9rem;
+}
+
+
+
+.social_links  a{
+
+    background-color: var(--clr-grey);
+    padding: 0.8rem 5.0rem;
+    text-decoration: none;
+    color: var(--clr-white);
+    border-radius: 5px;
+    font-weight: var(--fnt-600);
+}
+
+.social_links  a:hover{
+
+    background-color: var(--clr-green);
+    color: var(--clr-Off-black);
+    
+}
+
+main > *+*{
+    margin-top: 1.5rem;
+}
